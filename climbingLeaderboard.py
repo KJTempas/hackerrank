@@ -18,12 +18,12 @@ def climbingLeaderboard(ranked, player):
 
 # def rank_players(ranked):
     #find original ranks
-        ranks =[]
+        new_ranks =[]
         i = 1 #rank starts here
-        for r in range(0, len(ranked)-1): #loop through ranked scores
+        for r in range(len(ranked)-1): #loop through ranked scores
            # print(ranked[r])
             if ranked[r] > ranked[r+1]:
-                ranks.append(i)
+                new_ranks.append(i)
                 #print('ranks1',ranks)
                 if ranked[r] == p:
                     res.append(i)
@@ -32,10 +32,10 @@ def climbingLeaderboard(ranked, player):
             elif ranked[r] == ranked[r+1]:
                 x = ranked.count(ranked[r])
                 for t in range(x):
-                    ranks.append(i) #append rank multiple times
+                    new_ranks.append(i) #append rank multiple times
                     if ranked[r] == p:
                         res.append(i)
-                    print('2',ranks)
+                    print('2',new_ranks)
                 i +=1
                 r +=x
                 #where is p in the ranks?
@@ -43,6 +43,8 @@ def climbingLeaderboard(ranked, player):
         ranks.append(i+1)
     print('res', res)
 
+#try sets
+#
 
 #tried scipy.stats - not appropriate for this type of ranking
  #y = [sorted(ranked).index(x) for x in ranked] #does not work either
