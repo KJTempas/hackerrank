@@ -13,31 +13,35 @@ def climbingLeaderboard(ranked, player):
         #add score to ranked
         ranked.append(p)
         #sort desc
-        # players = sorted(ranked, reverse=True)
-        # print(players)
         ranked.sort(reverse=True)
         print(ranked)
 
 # def rank_players(ranked):
     #find original ranks
         ranks =[]
-        i = 1
+        i = 1 #rank starts here
         for r in range(0, len(ranked)-1): #loop through ranked scores
-            print(ranked[r])
+           # print(ranked[r])
             if ranked[r] > ranked[r+1]:
                 ranks.append(i)
-                print('ranks1',ranks)
+                #print('ranks1',ranks)
+                if ranked[r] == p:
+                    res.append(i)
                 i+=1
                 #how many are the same if equal? count?
             elif ranked[r] == ranked[r+1]:
                 x = ranked.count(ranked[r])
                 for t in range(x):
                     ranks.append(i) #append rank multiple times
+                    if ranked[r] == p:
+                        res.append(i)
                     print('2',ranks)
                 i +=1
                 r +=x
                 #where is p in the ranks?
-        return ranks
+        #need to deal with last num in ranked gets rank i+1
+        ranks.append(i+1)
+    print('res', res)
 
 
 #tried scipy.stats - not appropriate for this type of ranking
