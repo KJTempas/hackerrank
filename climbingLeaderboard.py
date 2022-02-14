@@ -6,30 +6,45 @@
 # determine the new playe's rank after each score
 
 def climbingLeaderboard(ranked, player):
+    #loop through player scores
+    #add score to ranked and rerank
+    res =[] #for rank each time new player score added
+    for p in player:
+        #add score to ranked
+        ranked.append(p)
+        #sort desc
+        # players = sorted(ranked, reverse=True)
+        # print(players)
+        ranked.sort(reverse=True)
+        print(ranked)
+
+# def rank_players(ranked):
     #find original ranks
-    ranks =[]
-    i = 1
-    for r in range(0, len(ranked)-1): #loop through ranked scores
-        print(ranked[r])
-        if ranked[r] > ranked[r+1]:
-            ranks.append(i)
-            print('ranks1',ranks)
-            i+=1
-            #how many are the same if equal? count?
-        elif ranked[r] == ranked[r+1]:
-            x = ranked.count(ranked[r])
-            for t in range(x):
-                ranks.append(i) #append rank multiple times
-                print('2',ranks)
-            i +=1
-            r +=x
+        ranks =[]
+        i = 1
+        for r in range(0, len(ranked)-1): #loop through ranked scores
+            print(ranked[r])
+            if ranked[r] > ranked[r+1]:
+                ranks.append(i)
+                print('ranks1',ranks)
+                i+=1
+                #how many are the same if equal? count?
+            elif ranked[r] == ranked[r+1]:
+                x = ranked.count(ranked[r])
+                for t in range(x):
+                    ranks.append(i) #append rank multiple times
+                    print('2',ranks)
+                i +=1
+                r +=x
+                #where is p in the ranks?
+        return ranks
+
+
 #tried scipy.stats - not appropriate for this type of ranking
  #y = [sorted(ranked).index(x) for x in ranked] #does not work either
     
     #add new score to ranked, then rerank each time
     #make ranking a function  or use a while loop
-
-
 
 #subtask - for 60% of max score: 1<=n<=200 and same for m
 

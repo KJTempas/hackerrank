@@ -2,18 +2,18 @@
 #I don't know how to simplify so takes less time
 #says subtask - 0<=n<=100 for 60% of the max score
 
-# def sumXor(n):
-#     tally = 0
-#     for x in range(n+1):
-#         if n + x == n ^ x:
-#             tally +=1
+def sumXor(n):
+    tally = 0
+    for x in range(n+1):
+        if n + x == n ^ x:
+            tally +=1
 
-#     return tally
+    return tally
         
-# sumXor(4) #4
-# sumXor(5) #2
-# print(sumXor(10)) #4
-# print(sumXor(1000000000000000)) #1073741824 #gives a memory erroron my computer; times out
+sumXor(4) #4
+sumXor(5) #2
+print(sumXor(10)) #4
+print(sumXor(1000000000000000)) #1073741824 #gives a memory erroron my computer; times out
 
 #an answer
 # As bin() returns a binary_string that has '0b' appended in the first 
