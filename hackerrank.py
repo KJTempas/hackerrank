@@ -124,7 +124,7 @@
 #     if n % 2==0 :  #even
 #         return'Weird' if 6<=n<=20 else 'Not Weird'
 #     else: #odd
-        return'Weird'
+    #    return'Weird'
 
 # print(if_else(8))# Weird
 # print(if_else(18)) # Weird
