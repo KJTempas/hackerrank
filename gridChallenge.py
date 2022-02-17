@@ -22,6 +22,8 @@ def gridChallenge(grid):
     #             return 'NO'
     # return 'YES'
 
+#TODO look at pandas.DataFrane.T to invert/transpose 2D list(swap rows and column s)
+#https://note.nkmk.me/en/python-pandas-t-transpose/
     #alt plan
     l = len(new_grid)
     print(l)
