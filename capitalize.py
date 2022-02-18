@@ -1,4 +1,4 @@
-def capitalize(s):
+def capitalize(s): #completed
     #split string at spaces if there are any
     st = s.split(' ')
     res = ''
