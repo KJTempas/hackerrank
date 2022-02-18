@@ -7,15 +7,12 @@ def print_formatted(number):
     #find max length of binary
     l = len(bin(number)[2:])
     print(l)
-    print(type(l))
-    for i in range(1, number):
-        d = i #decimal 
-        o = oct(i) #octal
-        h = hex(i)
-        b = bin(i)[2:] #binary
-      
-       # print('{:ld} {:ld} {:ld} {:ld} '.format(d, o, h, b))
-        print('{:3d}'.format(d))
+
+    for i in range(1, number+1):
+       #o for octal, d for decimal, X for capitalized  hex, b for binary
+        print("{0:d} {1:o} {2:X} {3:>b}".format(i,i,i,i))
+        
+    #TODO fix problem with right justifying binary
 
 print_formatted(5)
 # 1   1   1     1  #note space padding to match width of binaryvalue
