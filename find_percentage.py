@@ -1,5 +1,5 @@
 
-
+#completed
 def find_percentage(student_marks, query_name):
     scores = student_marks[query_name]
     a = sum(scores)/len(scores)
