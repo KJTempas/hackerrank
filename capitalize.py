@@ -9,14 +9,13 @@ def capitalize(s): #completed
 # capitalize('chris alan') #Chris Alan
 # capitalize('12abc') #12abc
 # print(capitalize('12abc alan'))
-print(capitalize(' hello   world  lol'))  #extra spaces need to be retained
+#print(capitalize(' hello   world  lol'))  #extra spaces need to be retained
 
-#why does this not work ?
-# if __name__ == '__main__': 
-#     s = input()
-#     # import pdb
-#     # breakpoint()
-#     print(capitalize(s))
+
+if __name__ == '__main__': 
+    s = input() #when entering input from terminal, must enter as a string, like 'hello world'
+
+    print(capitalize(s))
 
 
 
