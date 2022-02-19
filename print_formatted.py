@@ -1,3 +1,4 @@
+#aka string formatting
 #given an int, n, print the following values for each integer i 
 #from 1 to n
 #decimal octal hexadecimal(capitalized) binary
@@ -6,13 +7,14 @@
 def print_formatted(number):
     #find max length of binary
     l = len(bin(number)[2:])
-    print(l)
-
+    #l = len("{0:b}".format(number)) #alt way to do it
+ 
     for i in range(1, number+1):
        #o for octal, d for decimal, X for capitalized  hex, b for binary
-        print("{0:d} {1:o} {2:X} {3:>b}".format(i,i,i,i))
+        #{column:{width of column}decimal or binary...} remeber to add l to format
+        print("{0:{l}d} {1:{l}o} {2:{l}X} {3:>{l}b}".format(i,i,i,i, l = l))
         
-    #TODO fix problem with right justifying binary
+  #tricky formatting; lea rned about o and X and b
 
 print_formatted(5)
 # 1   1   1     1  #note space padding to match width of binaryvalue

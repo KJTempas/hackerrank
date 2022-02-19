@@ -4,7 +4,7 @@
 #  The hash value is an integer which is used to quickly 
 # compare dictionary keys while looking at a dictionary.
 #only immutable objects are hashable; lists are not hashable
-
+#completed
 def py_tuple(n,integer_list):
     return hash(tuple(integer_list))
 
