@@ -4,7 +4,8 @@
 #import sys #to get input from command line
 
 #tricky, especially input; 
-# not solved yet - works for me, but not on hackerrank
+# not solved yet - works for me, but not on hackerrank - 
+# get a Runtime error - no response on output
 def shoe_counter(shoe_sizes,transactions):
     total = 0
     from collections import Counter
@@ -20,7 +21,7 @@ def shoe_counter(shoe_sizes,transactions):
     return total
 
 #function works with this input
-#shoe_counter([2,3,4,5,6,8,7,6,5,18], [(6,55), (6,45), (6,55), (4,40), (18, 60), (10,50)])
+#shoe_counter([2,3,4,5,6,8,7,6,5,18], [(6,55), (6,45), (6,55), (4,40), (18, 60), (10,50)]) #200
 
 if __name__ == '__main__':
     #input on shoe sizes
