@@ -28,3 +28,6 @@ def iter(list1, k):
     
 
 iter(['a','a','c','d'], 2)
+
+#helpful info
+#https://stackoverflow.com/questions/36211680/2n-itertools-combinations-with-advanced-filtering
