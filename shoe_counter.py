@@ -3,7 +3,8 @@
 #not sure about input of shoesize and cost;  or tuple?
 #import sys #to get input from command line
 
-#tricky, especially input
+#tricky, especially input; 
+# not solved yet - works for me, but not on hackerrank
 def shoe_counter(shoe_sizes,transactions):
     total = 0
     from collections import Counter
