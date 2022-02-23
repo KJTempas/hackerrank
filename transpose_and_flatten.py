@@ -22,9 +22,11 @@ def transpose_and_flatten(grid):
 # [2 4] 
 # [1 2 3 4 ] #printflattened array
 
+
+ #TODO work on input
 if __name__ == "__main__":
     row,col = map(int, input().split())
-    #grid = [input().split() for i in range(row)] #original; input OK, but result is in strings
+    grid = [input().split() for i in range(row)] #original; input OK, but result is in strings
    # grid = [int(input().split()) for i in range(row)] #ValueError: invalid literal for int() with base 10: '1 2 3'
     for i in range(row):
         int(input())
