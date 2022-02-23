@@ -4,8 +4,7 @@
 #import sys #to get input from command line
 
 #tricky, especially input; 
-# not solved yet - works for me, but not on hackerrank - 
-# get a Runtime error - no response on output
+
 def shoe_counter(shoe_sizes,transactions):
     total = 0
     from collections import Counter
@@ -36,6 +35,7 @@ if __name__ == '__main__':
    # make tuples size(index[0]) and cost[1]
     transactions = []
     N = input() #number of transactions
+    n = int(N)
     line = ''
     for i in range(N): #for each transacion
         line +=input() 
@@ -54,6 +54,13 @@ if __name__ == '__main__':
 
 #    #call method
     print(shoe_counter(shoe_sizes, transactions))
+
+
+##alt input and call strategy in another challenge
+    #  s = input()
+    # i, c = input().split()
+    # s_new = mutate_string(s, int(i), c)
+    # print(s_new)
 
 
 #in hackerrank, get a Runtime error with this 
