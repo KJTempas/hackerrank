@@ -11,10 +11,10 @@ def runner_up(arr): #completed
 
 if __name__ == '__main__':
 
-    n=int(input())
+   # n=int(input()) #number of elements in array #really needed?
     arr = map(int, input().split())
 
-    runner_up(arr)
+    print(runner_up(arr))
 
 
     #how do you get this to run from main?

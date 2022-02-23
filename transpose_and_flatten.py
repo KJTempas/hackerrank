@@ -23,12 +23,13 @@ def transpose_and_flatten(grid):
 # [1 2 3 4 ] #printflattened array
 
 
- #TODO work on input
 if __name__ == "__main__":
     row,col = map(int, input().split())
-    grid = [input().split() for i in range(row)] #original; input OK, but result is in strings
-   # grid = [int(input().split()) for i in range(row)] #ValueError: invalid literal for int() with base 10: '1 2 3'
-    for i in range(row):
-        int(input())
+    grid = []
+    for i in range(row): #take entry string, split, make ints and make into a list
+        entries = list(map(int, input().split())) #then ade that list to the grid []
+        grid.append(entries)
 
     transpose_and_flatten(grid)
+
+#https://www.geeksforgeeks.org/take-matrix-input-from-user-in-python/
