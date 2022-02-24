@@ -17,7 +17,7 @@ def maxSubarray(arr):
     #consecutive combinations?
     #elements 1-end, 2-end, 3-end....1-end-1
     max = 0
-    
+
 
     #for subseqence max, sort first, then sum all + numbers; use lambda is positive
     sa = sorted(arr)
@@ -45,3 +45,6 @@ maxSubarray([2, -1, 2,3,4,-5]) # [10  11]
 #         n = int(input()) 
     #second line  contains n space separated ingeters (arr[i])
     #no empty subarrays or subsequ should be considered
+
+
+#look at  - https://www.geeksforgeeks.org/python-program-for-largest-sum-contiguous-subarray/
