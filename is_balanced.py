@@ -20,11 +20,12 @@ def isBalanced(s):
         else:
             return 'NO'
     return'YES'
-
+#regex ?
 
 print(isBalanced('{[()]}')) #YES
 print(isBalanced('{[(])}')) #NO
 print(isBalanced('{{[[(())]]}}')) #YES
+
 print(isBalanced('{{)[](}}')) #NO 
 print(isBalanced('{(([])[])[]}')) #YES
 print(isBalanced('{(([])[])[]}[]')) #YES

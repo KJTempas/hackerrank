@@ -16,20 +16,35 @@ def maxSubarray(arr):
     #subarr max - contiguous
     #consecutive combinations?
     #elements 1-end, 2-end, 3-end....1-end-1
-    max = 0
+    max_so_far = min(arr)
+    max_ending_here =0
+    for i in range(len(arr)):
+        max_ending_here = max_ending_here + arr[i] #2 ; 2 = 2+-1 or -1; 
+        if(max_so_far < max_ending_here): #if -5 <2; if 2 < -1 no change
+            max_so_far = max_ending_here #2
+        if(max_ending_here <0): #if 2<0 ; if -1<0, then mEH =0
+            max_ending_here = 0
+    print(max_so_far)
+    return max_so_far
+#TODO work this through
+        # arr[i]  MEH       MSF
+        #at start    0       -5
+        # 2           2     2
+        # -1       -1       still2
+        # 2          1       2
+        # 3 
+        # 4
+        # -5      
 
-
+#this part works - just commented out while working on top part
     #for subseqence max, sort first, then sum all + numbers; use lambda is positive
-    sa = sorted(arr)
-    print(sa)
-    #sum all positive numbers
-    filtered = filter(lambda s: s>0, sa ) #filter sa so that new list contains only numbers >0
-    print(list(filtered))
-    sum_filtered = sum(list(filtered))
-    print(sum_filtered)
-
-
-
+    # sa = sorted(arr)
+    # print(sa)
+    # #sum all positive numbers
+    # filtered = filter(lambda s: s>0, sa ) #filter sa so that new list contains only numbers >0
+    # print(list(filtered))
+    # sum_filtered = sum(list(filtered))
+    # print(sum_filtered)
 
 #maxSubarray([1,2,3,4]) # [10  10] 
 maxSubarray([2, -1, 2,3,4,-5]) # [10  11]
