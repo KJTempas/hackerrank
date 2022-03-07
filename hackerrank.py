@@ -1,3 +1,8 @@
+# Some basic hackerrank challenges are in this file.
+# I felt they didn't need their own individual file
+
+
+
 #https://www.linode.com/docs/api/linode-types/#type-view - 
 #test extracting specific results from a json api response and using them to calculate
 # cost
@@ -143,3 +148,21 @@
     #in the termina, type python hackerrank.py(the file name), then 
     #thern enter some input (ie 5) and the result will print
 #-----------------
+
+# def python_lists(arr):
+#     pass
+
+
+
+# if __name__ == '__main__':
+#     N = int(input()) # number of commands
+#----------------
+#what's your name  - completed
+# def print_full_name(first, last):
+#     print('Hello {0} {1}! You just delved into python.'.format(first, last))
+    
+
+# if __name__ == '__main__':
+#     first_name = input()
+#     last_name = input()
+#     print_full_name(first_name, last_name)
