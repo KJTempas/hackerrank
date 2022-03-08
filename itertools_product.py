@@ -13,7 +13,7 @@ def prod(A, B):
 #prod([1, 2], [3, 4]) #(1,3) (1,4) (2,3) (2,4)
 
 if __name__=='__main__':
-   
+   #input is 2 lists of space separated numbers
     A = list(map(int,input().strip().split()))
     B = list(map(int,input().strip().split()))
     prod(A,B)
