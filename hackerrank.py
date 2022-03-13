@@ -38,8 +38,6 @@
 # print(birthdays([4], 4,1)) #1
 # print(birthdays([2,5,1,3,4,4,3,5,1,1,2,1,4,1,3,3,4,2,1], 18, 7)) #3
 
-
-
 #-----------------
 #Monthly challenge #
 #1 Find the median - middle number 
@@ -149,20 +147,10 @@
     #thern enter some input (ie 5) and the result will print
 #-----------------
 
-# def python_lists(arr):
-#     pass
+def python_lists(arr):
+    pass
 
 
 
-# if __name__ == '__main__':
-#     N = int(input()) # number of commands
-#----------------
-#what's your name  - completed
-# def print_full_name(first, last):
-#     print('Hello {0} {1}! You just delved into python.'.format(first, last))
-    
-
-# if __name__ == '__main__':
-#     first_name = input()
-#     last_name = input()
-#     print_full_name(first_name, last_name)
+if __name__ == '__main__':
+    N = int(input()) # number of commands
