@@ -108,7 +108,21 @@
 #---------------
 
 #--------------------
-#
+#python_power_mod_power
+# The pow() function returns the value of x to the power of y (xy).
+# If a third parameter is present, it returns x to the power of y, modulus z.
+# def pow_mod(a,b,m):
+#     print(pow(a,b))
+#     print(pow(a,b,m))
+# #a to the b power %b
+# #pow_mod(3,4,5) # 81 1
+# #pow_mod(4,3,5)
+
+# if __name__=='__main__':
+#     a = int(input())
+#     b = int(input())
+#     m = int(input())
+#     pow_mod(a,b,m)
 #-----------------------------
 #XOR bitwise operator
  #= ^ = x^y; XOR returns 1 if one of the bits is 1 and ther other is 0 else returns false
@@ -147,10 +161,10 @@
     #thern enter some input (ie 5) and the result will print
 #-----------------
 
-def python_lists(arr):
-    pass
+# def python_lists(arr):
+#     pass
 
 
 
-if __name__ == '__main__':
-    N = int(input()) # number of commands
+# if __name__ == '__main__':
+#     N = int(input()) # number of commands
