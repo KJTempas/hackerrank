@@ -106,7 +106,12 @@
 #towerBreakers(2,2)# 2
 #towerBreakers(1,4) #1
 #---------------
-
+#question about powers and large number
+# a=9
+# b=29
+# c=7
+# d=27
+# print(pow(a,b) + pow(c,d))
 
 
 
