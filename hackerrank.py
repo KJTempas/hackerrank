@@ -107,13 +107,11 @@
 #towerBreakers(1,4) #1
 #---------------
 #question about powers and large number
-# a=9
+# a=9  #completed
 # b=29
 # c=7
 # d=27
 # print(pow(a,b) + pow(c,d))
-
-
 
 #--------------------
 #python_power_mod_power
@@ -176,3 +174,26 @@
 
 # if __name__ == '__main__':
 #     N = int(input()) # number of commands
+#-------------
+#NOT completed yet #TODO finish this one
+
+cube = lambda x: pow(x,3)
+def fibonacci(n):
+    nums = []
+    nums.append(0)
+    a = 0
+    b = 1
+    f = 1
+    while b<=n+1:
+        f = a+b
+        a = b
+        b = f
+        nums.append(a)
+    return nums
+
+if __name__ == '__main__':
+    n = int(input())
+    #fib_list = fibonacci(n)
+    print(list(map(cube, fibonacci(n))))
+#5 should yield [0, 1, 1, 8, 27]
+    #7 n = 7 should yield [0,1,1,8,27,127,512] 
