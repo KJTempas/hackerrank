@@ -177,23 +177,40 @@
 #-------------
 #NOT completed yet #TODO finish this one
 
-cube = lambda x: pow(x,3)
+#cube = lambda x: pow(x,3)
 def fibonacci(n):
-    nums = []
-    nums.append(0)
-    a = 0
-    b = 1
-    f = 1
-    while b<=n+1:
-        f = a+b
-        a = b
-        b = f
-        nums.append(a)
-    return nums
+    pass
+#     nums = []
+#     nums.append(0)
+#     a = 0
+#     b = 1
+#     f = 1
+#     while b<=n+1:
+#         f = a+b
+#         a = b
+#         b = f
+#         nums.append(a)
+#     return nums
 
-if __name__ == '__main__':
-    n = int(input())
-    #fib_list = fibonacci(n)
-    print(list(map(cube, fibonacci(n))))
+# if __name__ == '__main__':
+#     n = int(input())
+#     #fib_list = fibonacci(n)
+#     print(list(map(cube, fibonacci(n))))
 #5 should yield [0, 1, 1, 8, 27]
     #7 n = 7 should yield [0,1,1,8,27,127,512] 
+
+    #-------------
+    #triangle quest 1-Medium  #TODO finish this one
+# if __name__ == '__main__':
+
+#     for i in range(1, int(input())):#provided
+#         #in 2 lines; do not use any string concepts
+#         print(i)
+
+
+    #Goal = if n = 5
+    # 1
+    # 22
+    # 333
+    # 4444
+    #-------------
