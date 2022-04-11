@@ -3,24 +3,37 @@
 # whether the word has appeared in group A or not.  
 # Print the indices of each occurrence of m in group A.  
 # If it does not appear, print -1
+from collections import defaultdict
 
-def default_dict(arrA, arrB):
-    for t in arrB:
-        #enumerate fx takes a collection(tuple, arr) and returns an enum object with a counter as the key of the obj
+if __name__ == '__main__':
+    n,m = input().split()
+    n = int(n)
+    m = int(m)
+    A = []
+    B= []
+    for _ in range(n):
+        ele = int(input())
+        A.append(ele)
+    for _ in range(m):
+        ele = int(input())
+        B.append(ele)
+    print(A)
+    print(B)
 
-        indices = [ i for i, x in enumerate(arrA) if x == t]
-        if indices:
-            print([i+1 for i in indices])
-             #TODO output nees to be 2 indices separated by a space, like 1 3   
-        else:
-            print(-1)
-   
-    
- 
+# def default_dict(arrA, arrB):
+#     for t in B:
+#         #enumerate fx takes a collection(tuple, arr) and returns an
+#  enum object with a counter as the key of the obj
+
+#         indices = [ i for i, x in enumerate(A) if x == t]
+#         if indices:
+#             print([i+1 for i in indices])
+#              #TODO output nees to be 2 indices separated by a space, like 1 3   
+#         else:
+#             print(-1)
 
 
-
-default_dict(['a', 'b', 'a'], ['a','c']) #result is 1 3    -1
+#default_dict(['a', 'b', 'a'], ['a','c']) #result is 1 3    -1
 #because the first letter in B appears in positions 1 and 3 in A, and 
 #the second letter'c' does not appear in A, so  print -1
 #use 1 indexed positions
