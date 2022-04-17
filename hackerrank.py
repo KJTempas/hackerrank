@@ -167,13 +167,6 @@
     #thern enter some input (ie 5) and the result will print
 #-----------------
 
-# def python_lists(arr):
-#     pass
-
-
-
-# if __name__ == '__main__':
-#     N = int(input()) # number of commands
 #-------------
 #NOT completed yet #TODO finish this one
 
