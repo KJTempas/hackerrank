@@ -1,8 +1,6 @@
 # Some basic hackerrank challenges are in this file.
 # I felt they didn't need their own individual file
 
-
-
 #https://www.linode.com/docs/api/linode-types/#type-view - 
 #test extracting specific results from a json api response and using them to calculate
 # cost
