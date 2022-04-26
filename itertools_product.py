@@ -18,19 +18,19 @@
   #---------------------
   #itertools combinations
 
-from itertools import combinations
-#itertools.combinations(iterable, r) returns the r length 
-#subsequences of elements from the input iterable
-if __name__=='__main__':
-    #input is single line containing string S and integer value k separated by space
-    s, k = input().split()
-    s = sorted(s)
-    k =int(k)
+# from itertools import combinations
+# #itertools.combinations(iterable, r) returns the r length 
+# #subsequences of elements from the input iterable
+# if __name__=='__main__':
+#     #input is single line containing string S and integer value k separated by space
+#     s, k = input().split()
+#     s = sorted(s)
+#     k =int(k)
 
-    for i in range(1,k+1):
-      #  print(*combinations(s, i), sep = "\n") #this prints as tuples
-        for c in combinations(s, i):
-            print(''.join(c)) #join parts of the tuple without the comma
+#     for i in range(1,k+1):
+#       ##  print(*combinations(s, i), sep = "\n") #this prints as tuples
+#         for c in combinations(s, i):
+#             print(''.join(c)) #join parts of the tuple without the comma
 
 
 #goal for input HACK 2 is 
@@ -41,3 +41,13 @@ if __name__=='__main__':
 #AC
 #AH
 #etc
+#-----------------
+#itertools combination with replacement
+#completed
+if __name__=='__main__':
+    from itertools import combinations_with_replacement
+    s, k = input().split()
+    s = sorted(s)
+    k = int(k)
+    for c in combinations_with_replacement(s, k):
+        print(''.join(c)) #join parts of the tuple without the comma
